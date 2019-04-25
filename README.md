@@ -46,7 +46,7 @@ Options are specified with data attributes.
 | `data-max-height`        | `500`         | The max height of the element, in pixels. Limits the height, regardless of aspect ratio.
 | `data-offset`            | `2.0% -10.0%` | The amount to offset the image by, relative to the anchor point. Tweak with `dev` mode.
 | `data-anchor-point`      | `90.0% 50.0%` | The amount to offset the image by, relative to the anchor point. Tweak with `dev` mode.
-| `data-background-width`  | `1500`        | The desired background width, in pixels. This is a minimum, it's ignored if the background must grow to fill the container.
+| `data-background-width`  | `1500`        | The desired background width, in pixels. This is a minimum, it's ignored if the background must grow to fill the container. Tweak with `dev` mode.
 
 All options accept mobile/desktop modifiers. For example, you can set
 `data-aspect-ratio-mobile` and 
