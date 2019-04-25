@@ -12,15 +12,11 @@ const plugins = [
 export default [
     {
         input: './main.ts',
-        output: [{
+        output: {
             name: 'focusPanel',
             file: package_json.browser,
             format: 'iife'
-        }, {
-            name: 'focusPanel',
-            file: '../../Work/Nord/nordprojects.co/external/focus-panel.js',
-            format: 'iife'
-        }],
+        },
         plugins: plugins,
     },
     {
