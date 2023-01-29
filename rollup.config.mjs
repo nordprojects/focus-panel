@@ -30,7 +30,7 @@ export default [
         input: `./main.ts`,
         plugins: [dts()],
         output: {
-            file: `dist/bundle.d.ts`,
+            file: package_json.types,
             format: 'es',
         },
     }

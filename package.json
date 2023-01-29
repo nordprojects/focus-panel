@@ -6,6 +6,7 @@
   "module": "dist/focus-panel.esm.js",
   "browser": "dist/focus-panel.js",
   "unpkg": "dist/focus-panel.js",
+  "types": "dist/focus-panel.d.ts",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
