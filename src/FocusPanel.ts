@@ -1,11 +1,4 @@
-import * as h_ from 'hyperscript';
-let h = h_;
-
-// @ts-ignore
-if (h_.default) {
-    // @ts-ignore
-    h = h_.default;
-}
+import h from 'hyperscript';
 
 import Vector from './Vector'
 import {getParameterByName, clamp} from './util';

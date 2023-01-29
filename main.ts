@@ -1,6 +1,7 @@
 import FocusPanel from './src/FocusPanel';
 
-(window as any).focusPanelInit = function(options?: {mobileBreakpoint?: number}) {
+export { FocusPanel };
+export function focusPanelInit(options?: {mobileBreakpoint?: number}) {
     options = options || {};
 
     if (options.mobileBreakpoint) {
@@ -16,3 +17,5 @@ import FocusPanel from './src/FocusPanel';
         }
     });
 }
+
+(window as any).focusPanelInit = focusPanelInit;
