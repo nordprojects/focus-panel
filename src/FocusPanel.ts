@@ -202,10 +202,10 @@ export default class FocusPanel {
         let rightRatio = bottomRightImageQuadrantPixelSize.x / bottomRightContainerQuadrantPixelSize.x;
         let bottomRatio = bottomRightImageQuadrantPixelSize.y / bottomRightContainerQuadrantPixelSize.y;
 
-        if (!isFinite(topRatio)) { topRatio = 1; this.warn(`ignored topRatio constraint`); }
-        if (!isFinite(leftRatio)) { leftRatio = 1; this.warn(`ignored leftRatio constraint`); }
-        if (!isFinite(bottomRatio)) { bottomRatio = 1; this.warn(`ignored bottomRatio constraint`); }
-        if (!isFinite(rightRatio)) { rightRatio = 1; this.warn(`ignored rightRatio constraint`); }
+        if (!isFinite(topRatio)) { topRatio = 1; this.debug(`ignored topRatio constraint`); }
+        if (!isFinite(leftRatio)) { leftRatio = 1; this.debug(`ignored leftRatio constraint`); }
+        if (!isFinite(bottomRatio)) { bottomRatio = 1; this.debug(`ignored bottomRatio constraint`); }
+        if (!isFinite(rightRatio)) { rightRatio = 1; this.debug(`ignored rightRatio constraint`); }
 
         // the minumum of these numbers represents the worst case of the image
         // failing to fill the container.
@@ -285,6 +285,12 @@ export default class FocusPanel {
 
     warn(what: string) {
         console.warn(`FocusPanel: ${what}`, this.element);
+    }
+
+    debug(what: string) {
+        if (this.devMode) {
+            console.debug(`FocusPanel: ${what}`, this.element);
+        }
     }
 
     // Dev mode //
